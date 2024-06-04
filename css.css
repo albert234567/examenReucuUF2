@@ -1,0 +1,38 @@
+html, body {
+    height: 100%;
+    max-width: 1200px;
+    margin: 2% auto;
+    padding: 0;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+#ex1 {
+    position: relative;
+    overflow: hidden;
+    height: 100vh;
+}
+
+#ex1 img.fons {
+    width: 100%;
+    height: auto;
+}
+
+#ex1 img.nauTallada {
+    position: absolute;
+    width: 22%; 
+    left: 50%;
+    transform: translateX(-50%);
+    animation: marxa-nau 4s forwards;
+}
+
+@keyframes marxa-nau {
+    0% {
+        top: -25%;
+    }
+    100% {
+        top: 70%;
+    }
+}
