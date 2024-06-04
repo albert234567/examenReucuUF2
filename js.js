@@ -3,11 +3,17 @@ function reproduirAudio() {
     player.play();
 }
 
-window.onload = function() {
-    // Reproduir l'àudio quan es carrega la pàgina
-    reproduirAudio();
-
-    // Començar l'animació de la nau
+function iniciarAnimacio() {
     let nau = document.querySelector('.nauTallada');
     nau.style.animationPlayState = 'running';
+}
+
+window.onload = function() {
+    let playButton = document.getElementById('playButton');
+    
+    // Afegir l'event listener al botó de play
+    playButton.addEventListener('click', function() {
+        reproduirAudio();
+        iniciarAnimacio();
+    });
 };

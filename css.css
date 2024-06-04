@@ -26,6 +26,7 @@ h1 {
     left: 50%;
     transform: translateX(-50%);
     animation: marxa-nau 4s forwards;
+    animation-play-state: paused; /* animació pausada inicialment */
 }
 
 @keyframes marxa-nau {
@@ -33,6 +34,13 @@ h1 {
         top: -25%;
     }
     100% {
-        top: 70%;
+        top: 66%;
     }
+}
+
+#playButton {
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    left: 10px;
 }
